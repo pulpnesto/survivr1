@@ -1,4 +1,18 @@
 class String
+	@colors = [:red, :green, :yellow, :blue, :pink, :light_blue, :white, :light_grey, :black]
+	def self.colors
+		@colors
+	end
+
+	def self.sample_colors
+		@colors.each do |color|
+			puts "This is " + "#{color}".reverse
+		end
+	end
+
+	def self.create_colors
+
+	end
 
 	def black
 		"\e[30m" + self + "\e[0m"
@@ -36,14 +50,9 @@ class String
 		"\e[37m" + self + "\e[0m"
 	end
 
+
+
+
+
 end
 
-puts "John".black
-puts "John".red
-puts "John".green
-puts "John".yellow
-puts "John".blue
-puts "John".pink
-puts "John".light_blue
-puts "John".white
-puts "John".light_grey

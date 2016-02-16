@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "A simple gem to colorize terminal output"
   s.authors     = ["Ernie Gradillas"]
   s.email       = 'pulp.nesto@gmail.com'
-  s.files       = ["lib/colorizer.rb"]
+  s.files       = ["lib/colorizr.rb"]
   s.homepage    =
     'http://blackleviathan.com'
   s.license       = 'MIT'
