@@ -5,9 +5,6 @@ Gem::Specification.new do |s|
   s.summary     = "Colors for the Terminal"
   s.description = "A simple gem to colorize terminal output"
   s.authors     = ["Ernie Gradillas"]
-  s.email       = 'pulp.nesto@gmail.com'
   s.files       = ["lib/colorizr.rb"]
-  s.homepage    =
-    'http://blackleviathan.com'
   s.license       = 'MIT'
 end
