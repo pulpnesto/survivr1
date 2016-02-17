@@ -1,0 +1,29 @@
+1) How does your gem take advantage of Ruby’s metaprogramming capabilities?
+
+The primary usage of metaprogramming is in the creation of nine instance methods, one for each of the available colors. In the self.create_colors method,  "define_method" is used for each of the colors. I had never heard of metaprogramming before this section and I think it is kind of mind-blowing.
+
+
+
+2) How long did you spend working on this project?
+
+I spent about 4 hours on the gem and another hour on the markdown/README lesson.
+
+
+
+3) What was the most rewarding challenge you conquered?
+
+The part where I had the most trouble was getting the self.sample_colors method to work correctly. It's just a loop through the colors array of symbols but getting the text to change the correct color wasn't working. I thought
+
+  colors.each {|color| puts "This is " + "#{color}".color }
+
+should work, but I kept getting an unknown method error. After a LONG TIME of testing and trying new things, I was able to put together a google search that got me to a discussion on Stack Exchange about using symbols as methods. From that thread, I was able to modify my erroneous code to:
+
+  colors.each {|color| puts "This is " + "#{color}".send(color) }
+
+and it worked! Don't know if it's the way I'm "supposed" to write that method, but I'm not complaining.
+
+
+
+4) Where do you still have room to grow?
+
+The metaprogramming concept is out there. I think I could spend weeks trying to get a better grasp on how to generate code in this manner. I'm pretty proud that I was able to get it to work for this project...but I know there is a lot more practice up ahead in order to become more comfortable with it!
